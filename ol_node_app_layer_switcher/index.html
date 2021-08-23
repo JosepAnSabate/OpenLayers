@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Using OpenLayers with Parcel</title>
+    <link rel="stylesheet" href="./styles.css">
+   <style>
+      @import "node_modules/ol/ol.css"; 
+    </style>
+    <style>
+   
+      #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0%;
+    width: 80%;
+    height: 100%;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-1">
+        <div class="sidebar">
+          <h2>BaseLayers</h2>
+          <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked>OSM Standard<br>
+          <input type="radio" name="baseLayerRadioButton" value="waterColor">Water Color<br>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div id="map"></div>
+      </div>
+    </div>
+   
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
