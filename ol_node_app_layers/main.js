@@ -15,12 +15,9 @@ const map = new Map({
           layer: 'watercolor',
         }),
       }),
-     new TileLayer({
-        source: new Stamen({
-          layer: 'watercolor',
-        }),
-      }),
-      //   }),
+      new TileLayer({
+        source: new OSM()
+      })
      ]
     })],
   view: new View({
